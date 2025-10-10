@@ -72,13 +72,6 @@ const sDrawer = ref(true);
                         <NotificationDD />
                     </div>
                     <div>
-                        <!-- Upgrade button -->
-                        <v-btn
-                            class="mr-2 bg-primary rounded-pill"
-                            href="https://www.wrappixel.com/templates/spike-vuejs-admin-dashboard/?ref=376#demos"
-                            target="_blank"
-                            >Check Pro Version</v-btn
-                        >
                         <!-- User Profile -->
                         <ProfileDD />
                     </div>
