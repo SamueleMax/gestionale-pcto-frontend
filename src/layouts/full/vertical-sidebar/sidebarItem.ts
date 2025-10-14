@@ -37,76 +37,71 @@ const sidebarItem: menu[] = [
     },
     { header: 'School Pages' },
     {
-        title: 'Teachers',
+        title: 'Professore',
         icon: 'square-academic-cap-linear',
         to: '',
         children: [
             {
-                title: 'All Teachers',
-                to: 'https://spike-vue-main.netlify.app/teachers/all-teachers',
+                title: 'Tutti i Professori',
+                to: 'http://localhost:5173/all-teachers',
                 
                 external: true
             },
             {
-                title: 'Teachers Details',
-                to: 'https://spike-vue-main.netlify.app/teachers/teachers-details',
+                title: 'Dettagli Professori',
+                to: 'http://localhost:5173/teachers-details',
                 
                 external: true
             }
         ]
     },
     {
-        title: 'Exam',
+        title: 'Esami',
         icon: 'notebook-minimalistic-outline',
         to: '',
         children: [
             {
-                title: 'Exam Schedule',
-                to: 'https://spike-vue-main.netlify.app/exam/exam-schedule',
+                title: 'Schede Esame',
+                to: 'http://localhost:5173/exam-schedule',
                 
                 external: true
             },
             {
-                title: 'Exam Result',
-                to: 'https://spike-vue-main.netlify.app/exam/exam-result',
+                title: 'Risultati Esame',
+                to: 'http://localhost:5173/exam-results',
                 external: true
             },
-            {
-                title: 'Exam Result Details',
-                to: 'https://spike-vue-main.netlify.app/exam/exam-result-details',
-                external: true
-            }
         ]
     },
     {
-        title: 'Students',
+        title: 'Studenti',
         icon: 'case-broken',
         to: '',
         children: [
             {
-                title: 'All Students',
-                to: 'https://spike-vue-main.netlify.app/students/all-students',
+                title: 'Tutti gli Studenti',
+                to: 'http://localhost:5173/all-students',
                 external: true
             },
             {
                 title: 'Students Details',
-                to: 'https://spike-vue-main.netlify.app/students/students-details',
+                to: 'http://localhost:5173/students-details',
                 
                 external: true
             }
         ]
     },
     {
-        title: 'Classes',
+        title: 'Classi',
         icon: 'smart-home-broken',
-        to: 'https://spike-vue-main.netlify.app/school-pages/classes',
+        to: 'http://localhost:5173/classes',
         
         external: true
     },
     {
         title: 'Aziende',
         icon: 'diploma-linear',
-        to: 'https://spike-vue-main.netlify.app/school-pages/attendance',
+        to: 'http://localhost:5173/agency',
         
         external: true
     },
