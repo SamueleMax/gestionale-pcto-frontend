@@ -11,6 +11,7 @@ import ProfileDD from './vertical-header/ProfileDD.vue';
 import NavCollapse from './vertical-sidebar/NavCollapse/NavCollapse.vue';
 const sidebarMenu = shallowRef(sidebarItems);
 const sDrawer = ref(true);
+const selectedLanguage = ref('it');
 </script>
 
 <template>
@@ -44,14 +45,30 @@ const sDrawer = ref(true);
         <div class="maxWidth">
             <v-app-bar elevation="0" height="70" class="top-header">
                 <div class="d-flex align-center justify-space-between w-100">
-                    <div>
+                    <div class="d-flex align-center">
                         <v-btn class="hidden-lg-and-up text-muted" @click="sDrawer = !sDrawer" icon variant="flat" size="small">
                             <Menu2Icon size="20" stroke-width="1.5" />
                         </v-btn>
-                        <!-- Notification -->
                         <NotificationDD />
                     </div>
-                    <div>
+                    <div class="d-flex align-center" style="gap: 16px;">
+                        <!-- Dark/Light Mode Toggle Button -->
+                        <v-btn icon variant="flat" size="small" title="Toggle dark/light mode">
+                            <v-icon>mdi-theme-light-dark</v-icon>
+                        </v-btn>
+                        <!-- Language Dropdown -->
+                        <v-select
+                            :items="[{ text: 'Italiano', value: 'it' }, { text: 'English', value: 'en' }]"
+                            item-title="text"
+                            item-value="value"
+                            variant="underlined"
+                            density="compact"
+                            style="max-width: 120px;"
+                            label="Lingua"
+                            hide-details
+                            single-line
+                            v-model="selectedLanguage"
+                        />
                         <!-- User Profile -->
                         <ProfileDD />
                     </div>
