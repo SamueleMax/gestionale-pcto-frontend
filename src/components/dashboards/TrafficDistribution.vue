@@ -7,12 +7,12 @@ const lightprimary = theme.current.value.colors.lightprimary;
 const chartOptions = computed(() => {
     return {
         series: [5368, 3500, 4106],
-        labels: ["5368", "Refferal Traffic", "Oragnic Traffic"],
+        labels: ["non specificato", "Prenotati", "azienda"],
         chart: {
             height: 170,
             type: "donut",
             fontFamily: "Plus Jakarta Sans', sans-serif",
-            foreColor: "#c6d1e9",
+            foreColor: "#032265ff",
         },
 
         tooltip: {
@@ -20,7 +20,7 @@ const chartOptions = computed(() => {
             fillSeriesColor: false,
         },
 
-        colors: ["#e7ecf0", "#fb977d", primary],
+        colors: ["#e7ecf0", "#f1866bff", primary],
         dataLabels: {
             enabled: false,
         },
@@ -72,27 +72,25 @@ const Chart = [38, 40, 25];
     <v-card elevation="10" class="withbg">
         <v-card-item>
             <div class="d-sm-flex align-center justify-space-between pt-sm-2">
-                <v-card-title class="text-h5">Traffic Distribution</v-card-title>
+                <v-card-title class="text-h5">Clienti</v-card-title>
             </div>
             <v-row>
                 <v-col cols="6" sm="7">
                     <div class="mt-6">
-                        <h3 class="text-h4">$36,358</h3>
+                        <h3 class="text-h4">103</h3>
                         <div class="mt-2">
                             <v-avatar class="bg-lightsuccess text-success" size="20">
                                 <ArrowUpLeftIcon size="15" />
                             </v-avatar>
-                            <span class="text-subtitle-2 ml-2 font-weight-bold">+9%</span>
-                            <span class="text-subtitle-2 text-muted ml-2">last year</span>
                         </div>
                         <div class="d-flex align-center mt-4 ml-1">
                             <h6 class="text-subtitle-2 text-muted">
                                 <v-icon icon="mdi mdi-checkbox-blank-circle" class="mr-1" size="10"
-                                    color="primary"></v-icon> Oragnic
+                                    color="primary"></v-icon> azienda
                             </h6>
                             <h6 class="text-subtitle-2 text-muted pl-5">
                                 <v-icon icon="mdi mdi-checkbox-blank-circle" class="mr-1" size="10" color="error"></v-icon>
-                                Refferal
+                                Prenotati
                             </h6>
                         </div>
                     </div>
