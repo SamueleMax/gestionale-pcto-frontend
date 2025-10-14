@@ -37,27 +37,7 @@ const sDrawer = ref(true);
             </v-list>
            
 
-            <div class="pa-4">
-                <v-sheet rounded="md" color="lightprimary" class="position-relative extrabox hide-menu mx-1 px-4 py-3">
-                    <div class="d-flex align-center">
-                        <div>
-                            <h6 class="text-h6 text-10 mb-3">Check Pro Version</h6>
-                            <v-btn
-                                target="_blank"
-                                href="https://www.wrappixel.com/templates/spike-vuejs-admin-dashboard/?ref=376#demos"
-                                color="primary"
-                                class="px-5"
-                                rounded="pill"
-                                flat
-                                >check</v-btn
-                            >
-                        </div>
-                        <div class="">
-                            <img src="@/assets/images/backgrounds/sidebar-buynow-bg.svg" height="100" width="100" class="px-2 ms-8" />
-                        </div>
-                    </div>
-                </v-sheet>
-            </div>
+            
         </perfect-scrollbar>
     </v-navigation-drawer>
     <div class="container verticalLayout">
