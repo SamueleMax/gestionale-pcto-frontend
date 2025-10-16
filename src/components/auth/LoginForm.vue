@@ -6,7 +6,7 @@ const checkbox = ref(false);
 <template>
     <div class="d-flex align-center text-center mb-6">
         <div class="text-h6 w-100 px-5 font-weight-regular auth-divider position-relative">
-            <span class="bg-surface px-5 py-3 position-relative text-subtitle-1 text-grey100">Your Social Campaigns</span>
+            <span class="bg-surface position-relative text-subtitle-1 text-grey100"></span>
         </div>
     </div>
     <div>

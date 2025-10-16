@@ -3,7 +3,7 @@ import { ref } from 'vue';
 const checkbox = ref(false);
 </script>
 <template>
- 
+
     <v-row class="d-flex  mb-3">
 
         <v-col cols="12">

@@ -105,6 +105,7 @@ const sidebarItem: menu[] = [
         
         external: true
     },
+    
     /*{
         title: 'Aziende',
         icon: 'home-angle-linear',
@@ -801,72 +802,7 @@ const sidebarItem: menu[] = [
         ]
     },
 
-    { header: 'Auth' },
-    {
-        title: 'Login',
-        icon: 'login-2-line-duotone',
-        to: '/auth/login'
-    },
-    {
-        title: 'Register',
-        icon: 'user-plus-line-duotone',
-        to: '/auth/register'
-    },
-    {
-        title: 'Auth Pages',
-        icon: 'shield-user-outline',
-        to: '/auth',
-        children: [
-            {
-                title: 'Side Login',
-                to: 'https://spike-vue-main.netlify.app/auth/login',
-                
-                external: true
-            },
-            {
-                title: 'Boxed Login',
-                to: 'https://spike-vue-main.netlify.app/auth/login2',
-                
-                external: true
-            },
-            {
-                title: 'Side Register',
-                to: 'https://spike-vue-main.netlify.app/auth/register',
-                
-                external: true
-            },
-            {
-                title: 'Boxed Register',
-                to: 'https://spike-vue-main.netlify.app/auth/register2',
-                
-                external: true
-            },
-            {
-                title: 'Side Forgot Password',
-                to: 'https://spike-vue-main.netlify.app/auth/forgot-password',
-                
-                external: true
-            },
-            {
-                title: 'Boxed Forgot Password',
-                to: 'https://spike-vue-main.netlify.app/auth/forgot-password2',
-                
-                external: true
-            },
-            {
-                title: 'Side Two Steps',
-                to: 'https://spike-vue-main.netlify.app/auth/two-step',
-                
-                external: true
-            },
-            {
-                title: 'Boxed Two Steps',
-                to: 'https://spike-vue-main.netlify.app/auth/two-step2',
-                
-                external: true
-            }
-        ]
-    },
+    
     {
         title: 'Error',
         icon: 'bug-line-duotone',

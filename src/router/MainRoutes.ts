@@ -8,7 +8,7 @@ const MainRoutes = {
     children: [
         {
             name: 'Dashboard',
-            path: '/',
+            path: '/', 
             component: () => import('@/views/dashboard/index.vue')
         },
         {
@@ -41,7 +41,8 @@ const MainRoutes = {
             path: '/sample-page',
             component: () => import('@/views/pages/SamplePage.vue')
         },
-       
+        
+
     ]
 };
 

@@ -1,15 +1,32 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import MainRoutes from './MainRoutes';
 import AuthRoutes from './AuthRoutes';
+import MainRoutes from './MainRoutes';
 
-export const router = createRouter({
-    history: createWebHistory(import.meta.env.BASE_URL),
-    routes: [
-        {
-            path: '/:pathMatch(.*)*',
-            component: () => import('@/views/authentication/Error.vue')
-        },
-        MainRoutes,
-        AuthRoutes
-    ]
+const routes = [
+    {
+        path: '/',
+        redirect: '/auth/login'
+    },
+    AuthRoutes,
+    MainRoutes
+];
+
+const router = createRouter({
+    history: createWebHistory(),
+    routes
 });
+
+
+router.beforeEach((to, from, next) => {
+    const isLoggedIn = !!localStorage.getItem('token'); // esempio
+
+    if (to.meta.requiresAuth && !isLoggedIn) {
+        next('/auth/login');
+    } else if (to.path === '/auth/login' && isLoggedIn) {
+        next('/main/dashboard');
+    } else {
+        next();
+    }
+});
+
+export default router;
