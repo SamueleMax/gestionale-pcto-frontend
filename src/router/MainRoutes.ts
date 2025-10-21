@@ -28,6 +28,10 @@ const MainRoutes = {
         },
         {
             name: 'Tables',
+
+
+
+            
             path: '/ui/tables',
             component: () => import('@/views/ui-components/Tables.vue')
         },
@@ -40,6 +44,11 @@ const MainRoutes = {
             name: 'Starter',
             path: '/sample-page',
             component: () => import('@/views/pages/SamplePage.vue')
+        },
+        {
+            name: 'studenti',
+            path: '/all-students',
+            component: () => import('@/views/paginaStudenti/tuttiglistudenti.vue')
         },
        
     ]
