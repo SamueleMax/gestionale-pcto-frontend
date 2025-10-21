@@ -50,6 +50,12 @@ const MainRoutes = {
             path: '/all-students',
             component: () => import('@/views/paginaStudenti/tuttiglistudenti.vue')
         },
+        {
+            name: 'Docenti',
+            path: '/all-Docenti',
+            component: () => import('@/views/paginaDocenti/tuttiDocenti.vue')
+        },
+        
        
     ]
 };
